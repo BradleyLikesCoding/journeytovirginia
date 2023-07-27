@@ -1,0 +1,27 @@
+body {
+  background-color: rgb(199, 255, 247);
+}
+
+.stat {
+  display: inline;
+}
+
+#question {
+  width: 35%;
+  background-color: rgb(135, 225, 255);
+  min-height: 120px;
+  padding: 5px;
+}
+#help-text {
+  width: 35%;
+}
+#help-div, #game-div {
+  width: 55%;
+  float: left;
+  position: fixed;
+}
+#info-div {
+  width: 45%;
+  float: right;
+  background-color: rgb(135, 255, 183);
+}

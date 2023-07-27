@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+
+  <head>
+    <title>Journey to Virginia</title>
+    <link rel="stylesheet" href="https://unicorn-ui.com/buttons/css/buttons.css">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    <div id="help-div">
+      <table>
+        <tr>
+          <td>
+            <h1>Journey to Virginia</h1>
+          </td>
+          <td>
+            <a onclick="resetGame();" class="button button-caution button-rounded button-large">Play</a>
+          </td>
+        </tr>
+      </table>
+      <h2>
+        Instructions:
+      </h2>
+      <p id="help-text">
+        Answer questions to maintain your crew's happiness, ships condition, and keeping your crew's stomachs full. You need 200 distance to get to virginia. Remember your crew is made of grumpy, stubborn, and naive gentlemen! Good luck!
+      </p>
+    </div>
+    <div id="game-div" hidden="true">
+      Amount of food: <p class="stat">0</p><br>
+      Ship condition: <p class="stat">0</p><br>
+      Crew happiness: <p class="stat">0</p><br>
+      Distance Traveled: <p class="stat">0</p><br>
+      <button id="moveBtn" onclick="move()">Move without doing anything</button>
+      <div id="question"></div>
+      <button class="btn" id="btn1" onclick="btnClicked[0] = true;" hidden>Yes</button>&nbsp;&nbsp;<button class="btn" id="btn2" onclick="btnClicked[1] = true;" hidden>No</button>
+      <button class="btn" id="okayBtn" onclick="btnClicked[2] = true;" hidden>Okay</button>
+      <button id="resetBtn" hidden="true" onclick="this.hidden = 'true'; resetGame();">Reset</button>
+    </div>
+    <div id="info-div" hidden="true">
+      <h2>What are currents and trade winds?</h2>
+      <p>
+        Current is the speed of the waters movement. A strong current means that the water is moving quickly and will pull things
+        with it while moving. Trade winds are winds that consistantly blow from east to west along the equator. The virginia company's sailers used these
+        winds to help them get to virginia.
+      <h2>How does a boat move?</h2>
+      <p>A boats keel is a line that is under the hull that is parralel to the ship. It keeps the ship upright and stops it from moving to the side.
+        When wind applies pressure to the sail, the sail trys to push the boat both sideways and forward. The pressure to move sideways is usually resisted by the hull and keel.
+        However, the pressure to move forwards is taken advantage of and the ship moves forwards.
+      </p>
+    </div>
+    <script src="scripts.js"></script>
+  </body>
+
+</html>
